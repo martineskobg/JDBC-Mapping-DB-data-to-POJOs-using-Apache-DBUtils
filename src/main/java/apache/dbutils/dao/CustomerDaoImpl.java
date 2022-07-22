@@ -155,9 +155,9 @@ public class CustomerDaoImpl implements CustomerDao<Customer>, Queries {
         try {
             QueryRunner queryRunner = new QueryRunner();
             ResultSetHandler<List<CustomerPojo>> resultSetHandler = new BeanListHandler<>(CustomerPojo.class);
-            List<CustomerPojo> studentList = queryRunner.query(conn, Queries.selectCustomerPojoQuery, resultSetHandler, id);
+            List<CustomerPojo> customerPojoList = queryRunner.query(conn, Queries.selectCustomerPojoQuery, resultSetHandler, id);
 
-         return studentList.get(0);
+         return customerPojoList.get(0);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

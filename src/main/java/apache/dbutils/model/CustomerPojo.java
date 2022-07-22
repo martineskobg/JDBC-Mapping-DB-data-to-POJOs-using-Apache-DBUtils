@@ -19,7 +19,7 @@ public class CustomerPojo implements Serializable {
 
     @Id
     @Column(name="customer_id")
-    private int id;
+    private int customer_id;
 
     @Column(name = "name")
     private String name;
@@ -30,9 +30,6 @@ public class CustomerPojo implements Serializable {
 
     @Column(name = "phone")
     private String phone;
-
-
-
 
     @Override
     public String toString() {
