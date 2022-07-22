@@ -16,7 +16,7 @@ public interface Queries {
     String getRecordsCountQuery = "SELECT COUNT(customer_id) FROM customers;";
 
     String selectCustomerQuery  = "SELECT * FROM customers WHERE customer_id = ?";
-    String selectCustomerPojoQuery = "SELECT name, email, phone FROM customers WHERE customer_id = ?";
+    String selectCustomerPojoQuery = "SELECT customer_id,  name, email, phone FROM customers WHERE customer_id = ?";
     String query = "SELECT customer_id, age, name, phone FROM customers";
 
 }

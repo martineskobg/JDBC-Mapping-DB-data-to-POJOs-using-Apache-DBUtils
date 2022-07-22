@@ -31,12 +31,4 @@ public class CustomerPojo implements Serializable {
     @Column(name = "phone")
     private String phone;
 
-    @Override
-    public String toString() {
-        return "\nCustomerPojo{" +
-                "Name='" + name + '\'' +
-                ", Email='" + email + '\'' +
-                ", Phone='" + phone + '\'' +
-                '}';
-    }
 }
